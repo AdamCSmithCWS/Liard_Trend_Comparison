@@ -1,0 +1,6 @@
+.variable,name
+mu,Mean trend
+mu,Mean trend
+mu_dif,Mean difference t1 t2
+p_pos,posterior probability difference is positive
+rho,Pearson Correlation Coefficient
