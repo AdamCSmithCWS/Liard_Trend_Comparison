@@ -1,0 +1,59 @@
+
+
+### model for comparing trend estimates from two (indexed by e) different analyses, for different species (indexed by s)
+### Model is modified from the grassland bird model from Link and Barker 2010, pg 90, also described in Sauer and Link 2002, Ecology 83:1743-1751
+### and includes covariance components and corelation coefficient aspects from Matzke et al. 2017, https://doi.org/10.1525/collabra.78
+
+### in essence, this is a paired t-test style comparison, that accounts for the imprecision in each s*e trend estimate.
+
+## varhat = estaimtes of the variance of the trend estimates
+## betahat = estimates of the trends
+## nspecies = number of species
+
+model{
+
+for (e in 1:2) {
+
+for(s in 1:nspecies) {
+  tau.betahat[s,e] <- 1/varhat[s,e] #transform variance to precision
+	betahat[s,e] ~ dnorm(beta[s,e],tau.betahat[s,e] ) #betahat = data = trend estimates, tau.betahat = data = precision of trend estimate
+
+} # end of s loop
+
+mu[e] ~ dnorm(0,1) #mean trend for each survey
+tau.beta[e] ~ dscaled.gamma(1,10) 
+sd_beta[e] <- 1/sqrt(tau.beta[e])
+
+
+	} #end of e loop (indexing two models being compared)
+
+
+#### multivariate normal structure for the among-strata between survey variation in trends
+
+for(s in 1:nspecies) {
+
+beta[s,1:2] ~ dmnorm(mu[1:2],ISigma_cov[1:2,1:2])
+}
+
+#rho ~ dnorm(0,0.3)T(-1,1) #estimated Pearson correlation coefficient - prior truncated normal
+rho ~ dunif(-1,1)
+### sigma_cov is the covariance matrix
+Sigma_cov[1,1] <- pow(sd_beta[1],2)
+Sigma_cov[1,2] <- rho*sd_beta[1]*sd_beta[2]
+Sigma_cov[2,1] <- rho*sd_beta[1]*sd_beta[2]
+Sigma_cov[2,2] <- pow(sd_beta[2],2)
+ISigma_cov[1:2,1:2] <- inverse(Sigma_cov[1:2,1:2])
+
+
+for(s in 1:nspecies) {
+dif[s] <- beta[s,1]-beta[s,2] # dif is a vector of the strata-specific trend differences after accounting for the imprecision of each estimate's trend and the group (survey/monitoring program) structure
+} # end of second s-strata loop
+
+
+m_dif <- mean(dif[])
+mu_dif <- mu[1]-mu[2]
+p_pos <- step(mu_dif)
+
+} # end of model
+
+   

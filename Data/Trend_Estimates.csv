@@ -1,0 +1,56 @@
+species,common_name,latin_name,annual_trend_Habitat,lower_Habitat,upper_Habitat,annual_trend_Regional,lower_Regional,upper_Regional,annual_trend_StudyArea,lower_StudyArea,upper_StudyArea,annual_trend_BBS,lower_BBS,upper_BBS
+ALFL,Alder Flycatcher,Empidonax alnorum,8.68,-5.74,54.5,0.71,-4.13,5.58,9.4,-6.28,55.49,-1.36,-3.15,0.36
+AMCR,American Crow,Corvus brachyrhynchos,2.64,-5.78,22.36,10.58,3.22,18.82,13.22,2.25,33.76,-1.18,-1.95,-0.36
+AMRE,American Redstart,Setophaga ruticilla,-2.75,-5.99,-0.1,-7.11,-9.57,-4.59,-9.86,-14.09,-5.94,-5.29,-7.42,-3.21
+AMRO,American Robin,Turdus migratorius,2.05,-0.54,12.09,-3.33,-5.66,-0.99,-1.28,-5.31,9,-0.16,-1.34,0.93
+ATTW,American Three-toed Woodpecker,Picoides dorsalis,26.47,-3.17,102.57,-9.06,-15.29,-6.98,17.41,-15.43,94.46,3.91,0.18,8.62
+BAWW,Black-and-white Warbler,Mniotilta varia,-1.29,-4.12,1.28,-6.62,-10.28,-2.67,-7.91,-12.81,-2.82,-0.71,-3.26,2.18
+BBWA,Bay-breasted Warbler,Setophaga castanea,1.67,0.75,2.64,0.84,-0.55,2.21,2.51,1.1,3.97,8.83,2.53,15.43
+BBWO,Black-backed Woodpecker,Picoides arcticus,3.45,-1.06,42.5,-1.07,-8.59,6.86,2.39,-8.3,40.96,4.01,-2.66,11.52
+BCCH,Black-capped Chickadee,Poecile atricapillus,-4.46,-11.03,0.76,6.15,-0.57,13.42,1.69,-7.69,11.36,-1.35,-3.02,0.26
+BHVI,Blue-headed Vireo,Vireo solitarius,2.11,-1.8,6.23,0.75,-4.11,6.02,2.86,-3.13,9.06,-0.35,-2.77,2.03
+BOCH,Boreal Chickadee,Poecile hudsonicus,-0.77,-5.97,2.93,-3.08,-6.87,0.89,-3.86,-10.45,2.05,-0.74,-3.86,2.63
+BOWA,Bohemian Waxwing,Bombycilla garrulus,0.95,-3.14,10.35,-9.36,-28.25,8.46,-8.4,-27.99,11.57,-4.21,-7.78,-0.43
+CAWA,Canada Warbler,Cardellina canadensis,-5.14,-7.79,-2.48,-0.15,-3.06,2.86,-5.29,-8.84,-1.63,-2.13,-5.07,0.75
+CHSP,Chipping Sparrow,Spizella passerina,1.3,0.53,2.06,-1.02,-2.14,0.13,0.29,-1.01,1.56,-1.78,-3.15,-0.37
+CMWA,Cape May Warbler,Setophaga tigrina,8.34,6.13,10.66,2.52,-0.16,5.3,10.86,7.7,14.24,2.98,-1.8,8.01
+CORA,Common Raven,Corvus corax,1.39,-0.5,6.05,4.1,1.54,6.74,5.49,2.15,10.57,0.8,-1.05,2.46
+COYE,Common Yellowthroat,Geothlypis trichas,1.87,-39.54,54.4,9.11,-3.05,22.16,10.98,-30.11,64.62,0.19,-1.16,1.58
+DEJU,Dark-eyed Junco,Junco hyemalis,7.49,-0.37,27.89,0.2,-3.39,3.69,7.69,-0.93,28.55,-5.71,-8.11,-3.29
+EVGR,Evening Grosbeak,Coccothraustes vespertinus,4.87,-2.66,14.08,-0.79,-11.86,11.12,4.09,-7.51,17.41,-3.25,-10.12,3.65
+FOSP,Fox Sparrow,Passerella iliaca,3.54,-3.25,23,-14.54,-18.47,-10.27,-11,-20.13,9.57,-4.52,-8.06,-0.85
+GCKI,Golden-crowned Kinglet,Regulus satrapa,-13.12,-24.39,-2.45,1.62,-8.78,14.01,-11.5,-24.32,2.09,-0.68,-4.63,3.35
+GRAJ,Canada Jay,Perisoreus canadensis,-0.03,-0.37,0.34,-3.59,-5.37,-1.8,-3.62,-5.45,-1.81,-0.73,-2.82,1.52
+HAFL,Hammond's Flycatcher,Empidonax hammondii,-1.15,-7.61,6.22,2.43,-3.87,8.94,1.29,-5.99,10.09,,,
+HAWO,Hairy Woodpecker,Leuconotopicus villosus,11.95,-1.61,58.21,-3.31,-6.12,-0.53,8.64,-6.23,54.78,1.25,-0.61,3.16
+HETH,Hermit Thrush,Catharus guttatus,-0.35,-4.87,1.82,4.78,2.33,7.42,4.43,-0.74,8.2,-1.75,-3.83,0.4
+LEFL,Least Flycatcher,Empidonax minimus,-0.03,-2.86,3.03,-5.35,-8.82,-1.9,-5.38,-10.2,-0.35,-4.98,-6.16,-3.77
+LISP,Lincoln's Sparrow,Melospiza lincolnii,2.82,-0.79,13.99,5.1,-0.57,10.58,7.92,0.51,19.48,-1,-2.86,0.85
+MAWA,Magnolia Warbler,Setophaga magnolia,-0.14,-1.04,0.71,-2.28,-3.46,-1.08,-2.43,-3.86,-1,-1.64,-4.03,0.94
+MOWA,Morning Warbler,Geothlypis philadelphia,0.16,-5.26,5.44,0.13,-7.73,10.2,0.3,-10.19,12.5,-0.87,-2.45,0.7
+NOFL,Northern Flicker,Colaptes auratus,6.07,-20.06,70.26,-2.51,-7.46,2.57,3.56,-22.46,67.57,-0.27,-1.98,1.5
+NOWA,Northern Waterthrush,Parkesia noveboracensis,2.97,-0.86,13.84,-3.54,-8.33,0.88,-0.56,-7.46,10.99,-0.66,-3.82,2.56
+OCWA,Orange-crowned Warbler,Oreothlypis celata,24.75,1.85,72.82,-9.9,-22.17,1.83,14.85,-14.73,65.36,-2.29,-6.27,1.79
+OVEN,Ovenbird,Seiurus aurocapilla,0.94,0.01,1.88,-0.91,-2.21,0.39,0.03,-1.49,1.53,1.22,0.03,2.41
+PAWA,Palm Warbler,Setophaga palmarum,2.33,-0.62,4.79,1.82,-0.86,4.5,4.15,0.15,8.03,5.82,1.25,10.21
+PHVI,Philadelphia Vireo,Vireo philadelphicus,0.01,-1.17,1.5,0.59,-7.96,9.54,0.6,-8.04,9.75,-1.63,-3.98,0.75
+PISI,Pine Siskin,Spinus pinus,0.45,-0.42,3.72,-9.88,-11.94,-7.86,-9.43,-11.81,-5.96,-8.58,-11.61,-5.7
+PIWO,Pileated Woodpecker,Dryocopus pileatus,0.52,-4.04,29.29,0.23,-3.73,4.34,0.75,-5.68,29.07,2.55,0.4,5.03
+PUFI,Purple Finch,Haemorhous purpureus,-0.87,-6.32,5.13,-10.88,-22.55,-0.2,-11.75,-25.53,-0.75,-0.79,-3.36,1.82
+RBGR,Rose-breasted Grosbeak,Pheucticus ludovicianus,1.92,0.73,3.17,2.06,0.07,4.07,3.98,1.43,6.46,1.26,-0.12,2.7
+RBNU,Red-breasted Nuthatch,Sitta canadensis,-1.13,-3.03,0.68,-8.1,-10.26,-5.93,-9.23,-11.55,-6.88,-2.2,-4.39,0.13
+RCKI,Ruby-crowned Kinglet,Regulus calendula,-3.29,-4.92,-1.74,2.07,-0.65,4.9,-1.22,-3.7,1.41,-0.11,-2.19,2.02
+REVI,Red-eyed Vireo,Vireo olivaceus,-0.84,-1.7,0.03,-2.15,-3.4,-0.9,-2.99,-4.67,-1.34,-0.93,-1.7,-0.17
+SWTH,Swainson's Thrush,Catharus ustulatus,-0.59,-1.22,0.06,0.26,-0.56,1.09,-0.33,-1.14,0.49,-0.37,-1.85,1.14
+TEWA,Tennessee Warbler,Oreothlypis peregrina,5.56,4.9,6.23,0.2,-0.63,1.05,5.76,4.71,6.83,1.95,-1.91,5.93
+VATH,Varied Thrush,lxoreus naevius,4.04,-1.21,9.49,2.94,-4.34,10.36,6.98,-1.98,16.48,-4.06,-6.91,-1.33
+WAVI,Warbling Vireo,Vireo gilvus,0.04,-0.26,0.33,2.85,0.81,5.02,2.89,0.87,5.05,-1.44,-2.96,0.21
+WETA,Western Tanager,Piranga ludoviciana,0.19,0,0.39,-3.88,-4.79,-2.96,-3.69,-4.59,-2.79,0.39,-2.02,2.89
+WEWP,Western Wood-pewee,Contopus sordidulus,5.01,-7.34,38.33,-6.57,-29.22,11,-1.56,-27.59,34.17,-6.48,-8.28,-4.46
+WIWR,Winter Wren,Troglodytes hiemalis,-4.51,-6.58,-2.31,7.21,4.42,10,2.7,0.11,5.2,-1.05,-3.48,1.76
+WTSP,White-throated Sparrow,Zonotrichia albicollis,-0.27,-1.33,0.86,0.47,-0.99,1.95,0.2,-1.57,2.03,-1.98,-3.06,-0.95
+WWCR,White-winged Crossbill,Loxia leucoptera,-0.32,-0.62,-0.01,9.59,7.48,11.74,9.27,7.16,11.44,-1.26,-5.26,5.63
+YBFL,Yellow-bellied Flycatcher,Empidonax flaviventris,6.02,-2.96,35.31,-9.72,-14.83,-4.75,-3.7,-13.5,25.7,-0.5,-2.84,1.96
+YBSA,Yellow-bellied Sapsucker,Sphyrapicus varius,0.32,-0.07,0.71,-2.49,-3.57,-1.41,-2.16,-3.32,-1.05,-1.76,-3.5,0.2
+YRWA,Yellow-rumped Warbler,Setophaga coronata,-1.2,-2.01,-0.39,-3.05,-4.27,-1.84,-4.25,-5.43,-3.09,-0.95,-2.86,0.88
+YWAR,Yellow Warbler,Setophaga petechia,27.04,-27.8,190.9,14.86,-15.12,60.42,41.9,-22.76,220.47,4.73,0.95,8.81
