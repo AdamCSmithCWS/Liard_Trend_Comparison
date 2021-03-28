@@ -272,7 +272,9 @@ pdf(file = "figures/Mean_differences_between_trends.pdf")
 print(dif_plot)
 dev.off()
 
-write.csv(all_difs,file = "parameters_estimates.csv")
+nms = read.csv("data/Parameter_names.csv")
+all_difs <- left_join(all_difs,nms,by = ".variable")
+write.csv(all_difs,file = "parameters_estimates.csv",row.names = FALSE)
 
 
 # 
