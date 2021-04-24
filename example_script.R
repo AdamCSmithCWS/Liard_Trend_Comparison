@@ -118,7 +118,7 @@ difs_out <- betas_out
 summr <- betas_out
 lines_out <- betas_out
 
-for(ic in 1:nrow(comparisons)){
+for(ic in 2:3){
   
   trend1 = comparisons[ic,"t1"]
   trend2 = comparisons[ic,"t2"]
@@ -234,10 +234,15 @@ lines_out[[ic]] <- line_samples
 
 
 all_difs <- NULL
-for(ic in 1:5){
+beta_plot<- NULL
+for(ic in 2:3){
   tmp <- difs_out[[ic]]
   all_difs <- bind_rows(all_difs,tmp)
-  
+  tmp2 = betas_out[[ic]]
+  names(tmp2)[2:4] <- c("mean_Liard",
+                   "lci_Liard",
+                   "uci_Liard")
+  beta_plot <- bind_rows(beta_plot,tmp2)
 }
 # plotting correlations ---------------------------------------------------
 
@@ -275,6 +280,31 @@ dev.off()
 nms = read.csv("data/Parameter_names.csv")
 all_difs <- left_join(all_difs,nms,by = ".variable")
 write.csv(all_difs,file = "parameters_estimates.csv",row.names = FALSE)
+
+
+
+
+# plotting the betas ------------------------------------------------------
+
+bt = beta_plot %>% #filter(comparison == "StudyArea-BBS") %>% 
+  mutate(sd_Liard = uci_Liard-lci_Liard,
+         sd_BBS = uci_BBS-lci_BBS,
+         prec = 1/(sd_Liard^2 + sd_BBS^2))
+bp = ggplot(data = bt,aes(x = mean_BBS,y = mean_Liard))+
+  geom_point(aes(colour = version,size = prec),alpha = 0.6)+
+  geom_line(aes(group = species),alpha = 0.2,size = 0.3)+
+  scale_colour_viridis_d(aesthetics = c("colour","fill"),
+                         begin = 0.4,
+                         end = 0.8,
+                         option = "mako")+
+  theme_classic()+
+  facet_wrap(~comparison,ncol = 2,nrow = 1)
+
+pdf(file = "Figures/Liard_BBS_comparison.pdf"
+  ,width = 8.5,
+    height = 6)
+print(bp)
+dev.off()
 
 
 # 
