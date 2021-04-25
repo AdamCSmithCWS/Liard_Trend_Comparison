@@ -285,6 +285,14 @@ write.csv(all_difs,file = "parameters_estimates.csv",row.names = FALSE)
 
 
 # plotting the betas ------------------------------------------------------
+lbls <- c("Overall Liard Trend","After removing habitat effects")
+lab_df <- data.frame(comparison_labs = lbls,
+                     comparison = c("StudyArea-BBS","Regional-BBS"))
+
+lab_df$comparison_labs <- factor(lab_df$comparison_labs,levels = lbls,
+       ordered = TRUE)
+
+beta_plot <- left_join(beta_plot,lab_df,by = "comparison")
 
 bt = beta_plot %>% #filter(comparison == "StudyArea-BBS") %>% 
   mutate(sd_Liard = uci_Liard-lci_Liard,
@@ -292,13 +300,19 @@ bt = beta_plot %>% #filter(comparison == "StudyArea-BBS") %>%
          prec = 1/(sd_Liard^2 + sd_BBS^2))
 bp = ggplot(data = bt,aes(x = mean_BBS,y = mean_Liard))+
   geom_point(aes(colour = version,size = prec),alpha = 0.6)+
-  geom_line(aes(group = species),alpha = 0.2,size = 0.3)+
+  geom_line(aes(group = species),alpha = 0.1,size = 0.3)+
+  xlab("BBS Trend")+
+  ylab("Liard Trend")+
   scale_colour_viridis_d(aesthetics = c("colour","fill"),
                          begin = 0.4,
-                         end = 0.8,
+                         end = 0.95,
                          option = "mako")+
   theme_classic()+
-  facet_wrap(~comparison,ncol = 2,nrow = 1)
+  facet_wrap(~comparison_labs,ncol = 2,nrow = 1)
+
+print(bp)
+
+
 
 pdf(file = "Figures/Liard_BBS_comparison.pdf"
   ,width = 8.5,
